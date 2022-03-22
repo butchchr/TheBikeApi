@@ -10,6 +10,10 @@ namespace TheBikeApi.ContainerProvider
             builder.RegisterType<LocationService>()
                 .As<ILocationService>()
                 .SingleInstance();
+
+            builder.RegisterType<ForecastService>()
+                .As<IForecastService>()
+                .SingleInstance();
         }
     }
 }

@@ -4,7 +4,7 @@ namespace TheBikeApi.Services
 {
     public interface ILocationService
     {
-
+        
     }
 
     public class LocationService : ILocationService
@@ -14,6 +14,11 @@ namespace TheBikeApi.Services
         public LocationService(Serilog.ILogger log)
         {
             Log = log;
+        }
+
+        public void GetTrailSystemLocation()
+        {
+           
         }
     }
 }
